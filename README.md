@@ -9,7 +9,7 @@ La API permite gestionar usuarios a través de operaciones CRUD y se despliega e
 
 - Clonar repositorio:
 ```
-git clone
+git clone https://github.com/PengwinKingdom/marketlink-backend.git
 cd marketlink-backend
 ```
 
