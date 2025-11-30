@@ -1,0 +1,21 @@
+services:
+  marketlink-api:
+    build: .
+    container_name: marketlink-api
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    depends_on:
+      - marketlink-mongo
+
+  marketlink-mongo:
+    image: mongo:7
+    container_name: marketlink-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
